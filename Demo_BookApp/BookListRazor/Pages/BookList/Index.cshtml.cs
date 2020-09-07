@@ -19,7 +19,7 @@ namespace BookListRazor
             _db = db;
         }
 
-        // TODO: can I call this OnGetAsync?
+        // TODO: can I rename this OnGetAsync?
         public async Task OnGet()
         {
             // assign books to be all of the books from the database
