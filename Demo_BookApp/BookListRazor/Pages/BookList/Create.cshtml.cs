@@ -44,11 +44,6 @@ namespace BookListRazor
             {
                 return Page();
             }
-
-
-
-
-            throw new NotImplementedException();
         }
     }
 }
