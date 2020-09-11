@@ -36,7 +36,7 @@ namespace BookListRazor
             {
                 // not added to DB yet - but added a que
                 await _db.Book.AddAsync(Book);
-                // push data in EF's que, to the DB
+                // push data from EF's que, to the DB
                 await _db.SaveChangesAsync();
                 return RedirectToPage("Index");
             }
