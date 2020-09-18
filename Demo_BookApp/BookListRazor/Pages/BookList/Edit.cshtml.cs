@@ -8,6 +8,7 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace BookListRazor
 {
+    [BindProperties]
     public class EditModel : PageModel
     {
         private ApplicationDbContext _dbContext;
@@ -41,6 +42,16 @@ namespace BookListRazor
                 return RedirectToPage("Index");
             }
             return RedirectToPage();
+        }
+
+        public async Task<IActionResult> OnDelete() 
+        {
+
+
+
+
+
+            throw new NotImplementedException();
         }
 
     }
